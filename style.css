@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
 
 :root {
@@ -76,7 +78,7 @@ nav {
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 3;
 }
 
 nav ol {
@@ -110,16 +112,23 @@ nav ol li a:hover {
     align-items: center;
 }
 
+.search-label {
+    position: relative;
+}
+
+.search-label i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: var(--primary);
+}
+
 .search-bar input {
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 20px;
     border: none;
 }
-
-/*.search-bar i {*/
-/*    position: absolute;*/
-/*    background: #000;*/
-/*}*/
 
 .nav_btn button {
     background: var(--white);
@@ -133,9 +142,7 @@ nav ol li a:hover {
 }
 
 .nav_btn button:hover {
-    background: var(--primary);
-    color: var(--secondary);
-    border: 1px solid var(--secondary);
+    background: var(--success);
     transition: 0.3s ease;
 }
 
@@ -421,6 +428,11 @@ nav ol li a:hover {
     object-fit: cover;
 }
 
+.doctors_section {
+    padding-top: 70px;
+
+}
+
 .doctors_container {
     width: 70%;
     margin: auto;
@@ -605,13 +617,13 @@ footer {
     margin: auto;
 }
 
-.footer_box{
+.footer_box {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.footer_logo h1{
+.footer_logo h1 {
     color: var(--secondary);
     font-family: var(--secondary), serif;
     text-transform: uppercase;
@@ -619,24 +631,24 @@ footer {
     margin-bottom: 10px;
 }
 
-.footer_logo p{
+.footer_logo p {
     font-family: var(--second-font), serif;
     font-size: 14px;
     color: var(--white);
     font-weight: 300;
 }
 
-.footer_text{
+.footer_text {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-.footer_text ul li{
+.footer_text ul li {
     list-style: none;
 }
 
-.footer_text ul h4{
+.footer_text ul h4 {
     font-family: var(--second-font), serif;
     font-size: 15px;
     color: var(--white);
@@ -644,7 +656,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.footer_text ul li{
+.footer_text ul li {
     font-family: var(--second-font), serif;
     font-size: 14px;
     color: var(--white);
@@ -652,12 +664,12 @@ footer {
     margin-bottom: 10px;
 }
 
-hr{
+hr {
     margin: 20px 0;
     color: var(--success);
 }
 
-.footer_container p{
+.footer_container p {
     font-family: var(--second-font), serif;
     font-size: 14px;
     color: var(--white);
